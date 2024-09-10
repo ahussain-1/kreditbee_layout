@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+ .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  background-color: #fff; 
+}
+
+.logo{
+    width: 300px;
+}
+.logo img {
+  height: 70px; 
+  width: 140px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #000000; 
+}
+
+.action-button {
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #ff3e3e;
+  border-radius: 10px;
+ 
+}
+
+.action-button a {
+  text-decoration: none;
+  width: 150px;
+  font-size: 20px;
+  font-family: sans-serif;
+
+  color: #ff3e3e;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-evenly;
+    width: 150px;
+}
+.icons svg{
+    color: #000000;
+}
+.drop{
+    color: goldenrod;
+}
+header{
+    margin-bottom: 1%;
+}
+ 
+.sub-cont1{
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.sub-cont2{
+    width: 100vw;
+    height:50vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.sub-cont2 div{
+    height: 250px;
+    width: 320px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+section{
+    margin-top: 1%;
+    width: 100%;
+}
+.body-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* margin: auto; */
+    gap: 30px;
+}
+.body-cont>div{
+    height: 500px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+
+#form{
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(255, 213, 0, 0.899);
+    padding-top:5%;
+    padding-bottom: 5%;
+    box-sizing: border-box;
+
+}
+form>div{
+    width: 30%;
+    margin:auto;
+    background-color: #ffffff;
+    height:100% ;
+    padding: 3% 3%;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+form>div input{
+    width: 80%;
+    height: 50px;
+}
+form>div input:placeholder-shown{
+    padding-left: 15px;
+    font-size: 15px;
+}
+form>div input:focus{
+    font-size: 20px;
+    padding:0px 15px;
+}
+
+form>div label{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+form>div button{
+    background-color: rgb(92, 92, 255);
+    width: 100%;
+    height: 5vh;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+}
+ footer{
+    height: 5vh;
+    color: #fff;
+    background-color: #000000;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px;
+    box-sizing: border-box;
+ }
+
+</style>    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="kreditbee_05112019.png"alt="KreditBee Logo">
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Loans <svg class="drop" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+          </svg> </a></li>
+          <li><a href="#">Calculators <svg class="drop" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+          </svg> </a></li>
+          <li><a href="#">24K Digital Gold</a></li>
+          <li><a href="#">Credit Report</a></li>
+          <li><a href="#">Refer & Earn</a></li>
+          <li><a href="#">Repayment</a></li>
+        </ul>
+        <div class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+              </svg>
+        </div>
+        <div class="action-button">
+          <a href="#">Sign In</a>
+        </div>
+      </nav>
+
+     <header>
+        <div class="sub-cont1">
+            <h1 style="font-family: sans-serif;">Why Choose KreditBee?</h1>
+            <hr style="background-color: rgb(255, 203, 72); width: 30%; height: 2px; border: none; margin: 15px auto;" >
+        </div>
+        <div class="sub-cont2">
+            <div>
+                <img src="interest.png" alt="interest img" height="100px" width="100px">
+                <h3>Lower Interest Rate</h3>
+                <p>Get loans fpr multiple purposes at lower interest
+                     rates to suit your needs</p>
+            </div>
+            <div>
+                <img src="taximeter.png" alt="disbursal img" height="100px" width="100px">
+                <h3>Fast Processing and Disbursal</h3>
+                <p>Apply Online, check your eligibility and get
+                money directly in your bank in 10 minutes
+                </p>
+            </div>
+            <div>
+                <img src="floating-interest-rate.png" alt="loan img" height="100px" width="100px">
+                <h3>Easy Repayment Options</h3>
+                <p>Repay the loan amount in easy EMI with finance
+                tenure options</p>
+            </div>
+        </div>
+     </header>
+
+     <section>
+        <h2 style="margin-left: 5%; margin-bottom: 2%; font-family: sans-serif;">Fresh from the blog <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg> </h2>
+        <div class="body-cont">
+            <div>
+                <img src="modern-apartment-bedroom-comfortable-bed-near-window-generative-ai.jpg" alt="bed img" height="300px" width="300px">
+                <p>Shopping Guides</p>
+                <h3>9 Comfy Throws for Cosy Autumn <br/> Vibes</h3>
+                <p>Embrace the smuggling section with stylish throws that  <br/>will warm your heart</p>
+            </div>
+            <div>
+                <img src="hbag.jpeg" alt="bag img" height="300px" width="300px">
+                <p>Shopping Guides</p>
+                <h3>14 Beautiful Bags That Express Your <br/> Unique Style</h3>
+                <p>AMp up your fashion game with bags that perfectly <br/> match your aesthetic.</p>
+            </div>
+            <div>
+                <img src="gg.jpeg" alt="gift img" height="300px" width="300px">
+                <p>Gift Idea</p>
+                <h3>The Best Gift Ideas for Kids of All <br/> Ages</h3>
+                <p>Shop the sweetest surprises for all little ones in your <br/> family-these gifts for kids will definitely earn you <br/> some brownie points.</p>
+            </div>
+        </div>
+     </section>
+
+     <section id="form">
+        <form action="#">
+            <div>
+                <h2 style="font-family: sans-serif; text-align: center; margin-bottom: 2%;">Create Account</h2>
+                <p style="font-family: sans-serif; text-align: center; margin-bottom: 5%;">Already have an account? <span style="color: rgb(58, 58, 255);">Sign in</span></p>
+                <label for="name">Full Name<span style="color: red;">*</span></label>
+                <br/>
+                <input type="text" id="name" name="username" placeholder="Enter your name">
+                <br/>
+                <br/>
+                <label for="email">Email address<span style="color: red;">*</span></label>
+                <br/>
+                <input type="text" id="email" name="useremail" placeholder="Enter mail address">
+                <br/>
+                <br/>
+
+                <label for="phone">Phone Number<span style="color: red;">*</span></label>
+                <br/>
+                <input type="number" id="phone" name="userphone" placeholder="Enter your whatsapp number">
+                <br/>
+                <br/>
+
+                <label for="referral code">Referral Code (Optional)*</label>
+                <br/>
+                <input type="text" id="refferal code" name="refferal code" placeholder="Enter refferal code">
+                <br/>
+                <br/>
+
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+     </section>
+
+     <footer>
+        <h6>COPYRIGHT @ETSY PRIVATE LIMITED. ALL RIGHTS RESERVED.</h6>
+     </footer>
+
+
+ 
+</body>
+</html>
